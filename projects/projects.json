@@ -1,46 +1,40 @@
 [
   {
-    "id": 1,
-    "title": "Numbero",
-    "image": "numbero-thumb.png",
-    "video": "yq6jek2JwTw?si=tAYid23nNqzBKMs4",
+    "ttl": "Numbero",
+    "img": "nmbr.png",
     "description": "Game/App with simple logic and vast game related content made using React-Native, Expo and Firebase.",
     "date": "03.2024 - 11.2024",
-    "tech": ["figma", "react-native", "expo", "firebase", "github"],
-    "buttonText": "Play Store",
-    "icon": "google-play"
+    "tech": ["fg", "rn", "exp", "frb", "gh", "admb"],
+    "btn": [
+      "Play Store",
+      "gglplay",
+      "https://play.google.com/store/apps/details?id=com.anonymous.Numbero10&hl=en"
+    ]
   },
   {
-    "id": 2,
-    "title": "Ani Bani",
+    "ttl": "Ani Bani",
     "description": "Educational app for Georgian children, it teaches Georgian alphabet, similar to Duo ABC. Built in RN.",
     "date": "11.2024 - current",
-    "tech": ["figma", "react-native", "expo", "firebase", "github"],
-    "buttonText": "Play Store",
-    "icon": "google-play"
+    "tech": ["fg", "rn", "exp", "frb", "gh"],
+    "btn": ["Play Store", "gglplay"]
   },
   {
-    "id": 3,
-    "title": "Recepio",
+    "ttl": "Recepio",
     "description": "Description of project 3",
     "date": "03.2024 - 07.2024",
-    "tech": ["figma", "react-native", "expo", "firebase", "github"],
-    "buttonText": "Play Store",
-    "icon": "google-play"
+    "tech": ["fg", "rn", "exp", "frb", "gh"],
+    "btn": ["Play Store", "gglplay"]
   },
   {
-    "id": 4,
-    "title": "KEI Holding",
-    "image": "KEI-thumb.png",
+    "ttl": "KEI Holding",
+    "img": "kei.png",
     "description": "Real estate Website. i build its front-end using Vue.js and tailwind.css.",
     "date": "03.2024 - 07.2024",
-    "tech": ["figma", "vue-js", "tailwindcss", "github"],
-    "buttonText": "Web",
-    "icon": "domain"
+    "tech": ["fg", "vue", "tlwcss", "gh"],
+    "buttonText": ["keiholding", "dmn", "https://keiholding.com/"]
   },
   {
-    "id": 5,
-    "title": "high way",
+    "ttl": "high way",
     "description": "Real estate Website. i build its front-end using Vue.js and tailwind.css.",
     "date": "03.2024 - 07.2024",
     "tech": ["unity"],
