@@ -31,14 +31,13 @@
     "description": "Real estate Website. i build its front-end using Vue.js and tailwind.css.",
     "date": "03.2024 - 07.2024",
     "tech": ["fg", "vue", "tlwcss", "gh"],
-    "buttonText": ["keiholding", "dmn", "https://keiholding.com/"]
+    "btn": ["keiholding", "dmn", "https://keiholding.com/"]
   },
   {
     "ttl": "high way",
     "description": "Real estate Website. i build its front-end using Vue.js and tailwind.css.",
     "date": "03.2024 - 07.2024",
     "tech": ["unity"],
-    "buttonText": "Web",
-    "icon": "domain"
+    "btn": ["Web", "dmn", "https://highway.ge/"]
   }
 ]
