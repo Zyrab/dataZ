@@ -30,7 +30,7 @@
     "img": "hghw.png",
     "description": "A simple race survival game built in Unity as a personal request. Players control a car, switching lanes to avoid obstacles by tapping the screen. Features include multiple car skins and smooth touch-based controls.",
     "date": "07.2024 - 08.2024",
-    "tech": ["unt", "c#", "fg"],
+    "tech": ["unt", "cshrp", "fg"],
     "btn": [
       "HighWay.apk",
       "dwnld",
