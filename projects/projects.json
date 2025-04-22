@@ -51,5 +51,13 @@
     "date": "03.2024 - 07.2024",
     "tech": ["fg", "vue", "tlwcss", "gh"],
     "btn": ["keiholding", "dmn", "https://keiholding.com/"]
+  },
+  {
+    "ttl": "Domo",
+    "img": "domo.png",
+    "description": "TA lightweight DOM helper library designed to simplify element creation and manipulation with a fluent API. Includes a custom router for building SPAs with nested routes and history-based navigation.",
+    "date": "03.2024 - 07.2024",
+    "tech": ["js", "dom", "wbc", "gh"],
+    "btn": ["Domo", "gh", "https://github.com/Zyrab/Domo"]
   }
 ]
