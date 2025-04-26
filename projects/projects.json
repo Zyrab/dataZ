@@ -55,9 +55,17 @@
   {
     "ttl": "Domo",
     "img": "domo.png",
-    "description": "TA lightweight DOM helper library designed to simplify element creation and manipulation with a fluent API. Includes a custom router for building SPAs with nested routes and history-based navigation.",
+    "description": "A lightweight DOM helper library designed to simplify element creation and manipulation with a fluent API. Includes a custom router for building SPAs with nested routes and history-based navigation.",
     "date": "03.2024 - 07.2024",
     "tech": ["js", "dom", "wbc", "gh"],
     "btn": ["Domo", "gh", "https://github.com/Zyrab/Domo"]
+  },
+  {
+    "ttl": "Parsect",
+    "img": "prsct.png",
+    "description": "Converts SVG files into JSON-mapped Canvas Path2D shapes. Provides a toPath2D(map) function to create paths and a drawShapes(paths) to render them. Shapes are raw Canvas objects — fully compatible with native Canvas API methods.",
+    "date": "03.2025 - present",
+    "tech": ["js", "svg", "cnvs", "dom", "gh"],
+    "btn": ["Parsect", "dmn", "http://pasrsect.zyrab.dev"]
   }
 ]
