@@ -66,6 +66,6 @@
     "description": "Converts SVG files into JSON-mapped Canvas Path2D shapes. Provides a toPath2D(map) function to create paths and a drawShapes(paths) to render them. Shapes are raw Canvas objects — fully compatible with native Canvas API methods.",
     "date": "03.2025 - present",
     "tech": ["fg", "js", "html5", "npm", "gh"],
-    "btn": ["Parsect", "dmn", "http://pasrsect.zyrab.dev"]
+    "btn": ["Parsect", "dmn", "http://parsect.zyrab.dev"]
   }
 ]
