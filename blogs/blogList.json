@@ -3,14 +3,16 @@
     "slug": "how-routing-works-in-spa",
     "id": 1,
     "title": "How Routing Works in SPA",
-    "date": "18.02.2025",
+    "date": "18-02-2025",
+    "readTime": "5 min read",
     "intro": "I'v tried to built SPA, and here i explain the basics of how routing works, and how to build a simple routing system ourselves..."
   },
   {
     "slug": "svg-to-canvas",
     "id": 2,
     "title": "SVG To Canvas",
-    "date": "18.03.2025",
+    "date": "18-03-2025",
+    "readTime": "8 min read",
     "intro": "I made a SVG to Canvas converter, and here i explain why i made it and how it works..."
   }
 ]
