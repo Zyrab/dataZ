@@ -6,7 +6,7 @@
 
 By default, browsers load each page separately from the server. When you visit a website and navigate to another page, the browser requests a new page from the server and loads it.
 
-But in a {{Single Page Application (SPA)}}, we don’t want this to happen. Instead, we load everything upfront and dynamically change what’s displayed using {{JavaScript::blue}}, without making new page requests.
+But in a {{Single Page Application (SPA)::aqua}}, we don’t want this to happen. Instead, we load everything upfront and dynamically change what’s displayed using {{JavaScript::blue}}, without making new page requests.
 
 ## Hash-Based Routing ([[#/url]])
 
