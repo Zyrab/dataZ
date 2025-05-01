@@ -6,7 +6,7 @@
 
 By default, browsers load each page separately from the server. When you visit a website and navigate to another page, the browser requests a new page from the server and loads it.
 
-But in a {{Single Page Application (SPA)}}, we don’t want this to happen. Instead, we load everything upfront and dynamically change what’s displayed using {{JavaScript::blue}}, without making new page requests.
+But in a {{Single Page Application (SPA)::#3498db}}, we don’t want this to happen. Instead, we load everything upfront and dynamically change what’s displayed using {{JavaScript::#3498db}}, without making new page requests.
 
 ## Hash-Based Routing ([[#/url]])
 
@@ -16,27 +16,27 @@ The simplest way to implement custom navigation in an {{SPA}} is by using hash-b
 <a href="#/home">Home</a>
 ```
 
-The [[#]] (hash) is ignored by the server, meaning [[site.com/]] and [[site.com/#/home]] load the same initial page. However, changing the hash updates the {{URL}} and affects browser history, allowing navigation without full page reloads.
+The [[#]] (hash) is ignored by the server, meaning [[site.com/]] and [[site.com/#/home]] load the same initial page. However, changing the hash updates the {{URL::#3498db}} and affects browser history, allowing navigation without full page reloads.
 
-To determine which content to display, we can use the {{Location API::blue}} to read the hash value:
+To determine which content to display, we can use the {{Location API::#3498db}} to read the hash value:
 
 ```js
 console.log(window.location.hash); // Returns the current hash (e.g., "#/home")
 ```
 
-With this, we can dynamically change what’s displayed on the page based on the {{URL}}.
+With this, we can dynamically change what’s displayed on the page based on the {{URL::#3498db}}.
 
 While it works fine for small projects, hash routing has some problems:
 
- - Not great for {{SEO—search engines}} ignore [[#/urls]].
- - Messy {{URLs}} compared to clean [[/about]], [[/contact]].
+ - Not great for {{SEO—search engines::gold}} ignore [[#/urls]].
+ - Messy {{URLs::#3498db}} compared to clean [[/about]], [[/contact]].
  - Some analytics & social tools might not track [[#/urls]] properly.
 
-For bigger projects, history-based routing is the way to go.
+For bigger projects, {{history-based routing::#3498db}} is the way to go.
 
 ## History-Based Routing ([[/url]])
 
-With the {{History API::blue}}, we can get clean {{URLs}} like [[/about]] instead of [[#/about]].
+With the {{History API::#3498db}}, we can get clean {{URLs::#3498db}} like [[/about]] instead of [[#/about]].
 
 ```html
 <a class="nav-link" data-route="/home">Home</a>
@@ -55,7 +55,7 @@ document.addEventListener("click", (e) => {
 });
 ```
 
-And use `history.pushState()` to update the {{URL}} without refreshing the page:
+And use `history.pushState()` to update the {{URL::#3498db}} without refreshing the page:
 
 ```js
 const navigateTo = (url) => {
@@ -68,7 +68,7 @@ const navigateTo = (url) => {
 };
 ```
 
-Let’s set up a simple route object, where keys are paths and values are {{HTML elements}} (or functions returning elements):
+Let’s set up a simple route object, where keys are paths and values are {{HTML elements::#3498db}} (or functions returning elements):
 
 ```js
 const page = (text) => {
@@ -101,7 +101,7 @@ const renderPage = (component) => {
 
 ## Handling Browser Navigation Events
 
-The back and forward buttons also change the {{URL}}. To catch those events, we listen to `popstate` changes:
+The back and forward buttons also change the {{URL::#3498db}}. To catch those events, we listen to `popstate` changes:
 
 ```js
 window.addEventListener("popstate", () => {
@@ -117,9 +117,9 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 ```
 
-## Server Configuration for {{History API}}
+## Server Configuration for {{History API::#3498db}}
 
-History-based routing won't work properly unless the server serves `index.html` for all requests. Otherwise, if you go directly to [[/about]], you'll get a {{404 error}}.
+History-based routing won't work properly unless the server serves `index.html` for all requests. Otherwise, if you go directly to [[/about]], you'll get a {{404 error::gold}}.
 
 For GitHub Pages, a quick fix is to create a `404.html` that redirects all unknown routes to `index.html`:
 
@@ -134,11 +134,11 @@ For GitHub Pages, a quick fix is to create a `404.html` that redirects all unkno
 </html>
 ```
 
-This makes {{URLs}} work, but for a real project, you need proper {{server-side-routing}}.
+This makes {{URLs::#3498db}} work, but for a real project, you need proper {{server-side-routing::#3498db}}.
 
 ## Preserving Scroll Position Between Routes
 
-One annoying thing about {{SPA navigation}} is that it resets scroll position when you switch pages. To fix that, we save scroll positions in an `object` and track the previous route:
+One annoying thing about {{SPA navigation::#3498db}} is that it resets scroll position when you switch pages. To fix that, we save scroll positions in an `object` and track the previous route:
 
 ```js
 const scrollPositions = {};
@@ -185,5 +185,5 @@ Now, when we navigate back and forth, the scroll position will be saved properly
 
 That's it, we know the basics of client-side routing!
 
-This is exactly how frameworks like {{React Router:blue}} and {{Vue Router:green}} work under the hood. Of course, they include nested routes, guards, lazy loading, and more, but this is the core foundation to build on.
+This is exactly how frameworks like {{React Router::blue}} and {{Vue Router::green}} work under the hood. Of course, they include nested routes, guards, lazy loading, and more, but this is the core foundation to build on.
 
