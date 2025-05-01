@@ -63,7 +63,7 @@ Once you convert the {{SVG::gold}} to {{JSON::purple}}, you need to draw it.
 
 I created two functions for drawing:
 
-1. `toPath2D()` - Converts the {{JSON::purple}} into an array of objects. Each object contains a `Path2D()` instance and its associated attributes like {{fill::violet}}, {{stroke::green}}, or even {{gradient::linearGradient(to right, #48eb5e,#b748eb, #d848eb)}} definitions.
+1. `toPath2D()` - Converts the {{JSON::purple}} into an array of objects. Each object contains a `Path2D()` instance and its associated attributes like {{fill::violet}}, {{stroke::green}}, or even {{gradient::#b748eb}} definitions.
 2. `drawShapes()` - Takes a canvas 2D context and the array from `toPath2D()`, then renders everything. It applies the correct styles and draws each shape. (You can later manipulate the canvas, {{rotate::violet}}, {{translate::green}}, {{animate::red}}, since `drawShapes()` doesn’t lock you in.)
 
 ```js
