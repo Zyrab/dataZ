@@ -33,7 +33,7 @@ document.getElementById("svgInput")
   parseSVG(svgText)
 });
 ```
-I use `DOMParser()` to convert the {{SVG text}} into {{DOM elements::#EB4888}}, making it easier to iterate through child elements and extract what I need. From the root `<svg>` element, I get the viewBox for retrieving width and height and calculating the center point of the graphic.
+I use `DOMParser()` to convert the SVG text into {{DOM elements::#EB4888}}, making it easier to iterate through child elements and extract what I need. From the root `<svg>` element, I get the viewBox for retrieving width and height and calculating the center point of the graphic.
 
 ```js
 function parseSVG(svgText) {
@@ -82,7 +82,7 @@ ctx.translate(
 ctx.scale(scale, scale); // scales the shape
 drawShape(ctx, shapes);
 ctx.restore();
----
+```
 
 ## Try It Out
 
