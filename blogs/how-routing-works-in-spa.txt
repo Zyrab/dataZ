@@ -18,7 +18,7 @@ The simplest way to implement custom navigation in an {{SPA}} is by using hash-b
 
 The [[#]] (hash) is ignored by the server, meaning [[site.com/]] and [[site.com/#/home]] load the same initial page. However, changing the hash updates the {{URL::#3498db}} and affects browser history, allowing navigation without full page reloads.
 
-To determine which content to display, we can use the {{Location API::#3498db}} to read the hash value:
+To determine which content to display, we can use the {{Location API::#EB4888}} to read the hash value:
 
 ```js
 console.log(window.location.hash); // Returns the current hash (e.g., "#/home")
@@ -36,7 +36,7 @@ For bigger projects, {{history-based routing::#3498db}} is the way to go.
 
 ## History-Based Routing ([[/url]])
 
-With the {{History API::#3498db}}, we can get clean {{URLs::#3498db}} like [[/about]] instead of [[#/about]].
+With the [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API), we can get clean {{URLs::#3498db}} like [[/about]] instead of [[#/about]].
 
 ```html
 <a class="nav-link" data-route="/home">Home</a>
@@ -68,7 +68,7 @@ const navigateTo = (url) => {
 };
 ```
 
-Let’s set up a simple route object, where keys are paths and values are {{HTML elements::#3498db}} (or functions returning elements):
+Let’s set up a simple route object, where keys are paths and values are {{HTML elements::#EB4888}} (or functions returning elements):
 
 ```js
 const page = (text) => {
@@ -117,9 +117,9 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 ```
 
-## Server Configuration for {{History API::#3498db}}
+## Server Configuration for {{History API::#EB4888}}
 
-History-based routing won't work properly unless the server serves `index.html` for all requests. Otherwise, if you go directly to [[/about]], you'll get a {{404 error::gold}}.
+History-based routing won't work properly unless the server serves `index.html` for all requests. Otherwise, if you go directly to [[/about]], you'll get a {{404 error::red}}.
 
 For GitHub Pages, a quick fix is to create a `404.html` that redirects all unknown routes to `index.html`:
 
@@ -128,7 +128,7 @@ For GitHub Pages, a quick fix is to create a `404.html` that redirects all unkno
 <html lang="en">
 <body>
 	<script>
-		window.location.replace("#" + window.location.pathname);
+		window.location.replace("#" + window.location.pathname); // using # to pass the route
 	</script>
 </body>
 </html>
@@ -185,5 +185,5 @@ Now, when we navigate back and forth, the scroll position will be saved properly
 
 That's it, we know the basics of client-side routing!
 
-This is exactly how frameworks like {{React Router::blue}} and {{Vue Router::green}} work under the hood. Of course, they include nested routes, guards, lazy loading, and more, but this is the core foundation to build on.
+This is exactly how frameworks like {{React Router::cyan}} and {{Vue Router::green}} work under the hood. Of course, they include nested routes, guards, lazy loading, and more, but this is the core foundation to build on.
 
