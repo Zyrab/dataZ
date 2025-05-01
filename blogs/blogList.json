@@ -12,7 +12,7 @@
     "id": 2,
     "title": "SVG To Canvas Converter Parsect",
     "date": "18-03-2025",
-    "readTime": "8 min read",
+    "readTime": "2 min read",
     "intro": "While working on my mini game, I needed a way to import SVG graphics into a canvas. so I built a converter."
   }
 ]
