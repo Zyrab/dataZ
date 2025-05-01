@@ -8,7 +8,7 @@ There were a few options for displaying it on canvas:
 
 1. Using PNG – This felt too static and disconnected. I didn’t like the idea at the time.
 2. Extracting points and mapping them manually – I actually did this at first.
-3. Using the `d` attribute from `<path>` tags and rendering with [Path2D() from the Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Path2D) – This was the most promising.
+3. Using the `d` attribute from `<path>` tags and rendering with [Path2D()](https://developer.mozilla.org/en-US/docs/Web/API/Path2D) – This was the most promising.
 
 `Path2D()` is a solid option. It {{caches::gold}} shapes, so once you've created a path, you can reuse it efficiently with `ctx.fill(path)` or `ctx.stroke(path)` without recalculating everything. But there’s one problem: SVGs often include more than just paths. They include {{colors::rgb(52, 152, 219)}}, {{strokes::green}}, {{gradients::violet}}, etc., and `Path2D()` doesn’t store that information.
 
@@ -59,12 +59,12 @@ Then there are more complex shapes using elements like `<defs>` for reusable com
 
 ## Rendering the Shapes
 
-Once you convert the {{SVG}} to {{JSON::purple}}, you need to draw it.
+Once you convert the {{SVG::gold}} to {{JSON::purple}}, you need to draw it.
 
 I created two functions for drawing:
 
-1. `toPath2D()` - Converts the {{JSON::purple}} into an array of objects. Each object contains a `Path2D()` instance and its associated attributes like {{fill::violet}}, {{stroke::green}}, or even {{gradient::linear-gradient(to right, #48eb5e,#b748eb, #d848eb)}} definitions. (Currently supports basic gradients, fill, and stroke. Shadows and other styles are planned.)
-2. `drawShapes()` - Takes a canvas 2D context and the array from `toPath2D()`, then renders everything. It applies the correct styles and draws each shape. (You can later manipulate the canvas, {{rotate::violet}}, {{translate::green}}, {{animate:red}}, since `drawShapes()` doesn’t lock you in.)
+1. `toPath2D()` - Converts the {{JSON::purple}} into an array of objects. Each object contains a `Path2D()` instance and its associated attributes like {{fill::violet}}, {{stroke::green}}, or even {{gradient::linearGradient(to right, #48eb5e,#b748eb, #d848eb)}} definitions.
+2. `drawShapes()` - Takes a canvas 2D context and the array from `toPath2D()`, then renders everything. It applies the correct styles and draws each shape. (You can later manipulate the canvas, {{rotate::violet}}, {{translate::green}}, {{animate::red}}, since `drawShapes()` doesn’t lock you in.)
 
 ```js
 const ctx = canvas.getContext("2d");
@@ -89,4 +89,4 @@ ctx.restore();
 - You can check out the full source code on [GitHub](https://github.com/Zyrab/parsect)
 - And try it live on [parsect.zyrab.dev](https://parsect.zyrab.dev)
 
-If you're working with SVGs and want to render them on canvas in a more structured way—or just want to see how it works—feel free to explore, fork, and contribute.
+If you're working with SVGs and want to render them on canvas in a more structured way. Or just want to see how it works, feel free to explore, fork, and contribute.
