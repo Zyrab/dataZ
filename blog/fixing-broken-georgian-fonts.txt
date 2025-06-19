@@ -1,6 +1,6 @@
 # Fixing Broken Georgian Fonts
 
-Have you ever found a font you liked, only to have it cause unexpected issues? In my case, it completely broke Latin characters, I couldn’t use them at all. So let’s figure out why.
+### Have you ever found a font you liked, only to have it cause unexpected issues? In my case, it completely broke Latin characters, I couldn’t use them at all. So let’s figure out why.
 
 ## Discovering the History
 
@@ -25,9 +25,9 @@ Even worse: on the actual website, using Latin characters (like `a` or `b`) show
 
 ## Enter FontForge
 
-This issue led me to discover {{FontForge::#3498db}}, an [[open-source]] font editor. It can open font files and let you inspect or modify everything: [[glyphs]], [[mappings]], [[scripts]], and more.
+This issue led me to discover [FontForge](https://fontforge.org/en-US), an [[open-source]] font editor. It can open font files and let you inspect or modify everything: [[glyphs]], [[mappings]], [[scripts]], and more.
 
-When I opened the font in FontForge, the issue was clear: the author had taken an {{English}} font and placed {{Georgian::#EB4888}} glyphs on Latin codepoints. That may have made sense years ago when Georgian Unicode support was poor, but today it’s broken behavior.
+When I opened the font in FontForge, the issue was clear: the author had taken an {{English::#3498db}} font and placed {{Georgian::#EB4888}} glyphs on Latin codepoints. That may have made sense years ago when Georgian Unicode support was poor, but today it’s broken behavior.
 
 So I:
 
