@@ -14,5 +14,13 @@
     "date": "18-03-2025",
     "readTime": "2 min read",
     "intro": "While working on my mini game, I needed a way to import SVG graphics into a canvas. so I built a converter."
+  },
+  {
+    "slug": "fixing-broken-georgian-fonts",
+    "id": 3,
+    "title": "Fixing Broken Georgian Fonts",
+    "date": "16-06-2025",
+    "readTime": "2 min read",
+    "intro": "Ever found a font you liked, only to run into strange issues? Well then, let's fix them together."
   }
 ]
